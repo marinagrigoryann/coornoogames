@@ -119,6 +119,7 @@ header {
 
 .html {
     overflow-x: scroll; /* Добавлено горизонтальное прокручивание */
+    position: static;
 }
 
 
