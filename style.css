@@ -1,7 +1,107 @@
+.parallax {
+    /* The image used */
+    background-image: url("photo\ 2.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    opacity: 0,7;
+  }
+
+/* Базовый стиль для изображения */
 .image {
-    width: 500px;
-    height: 300px;
+    width: 10%; /* Устанавливаем базовый размер изображения */
+    max-width: 100%; /* Предотвращаем выход изображения за пределы контейнера */
+    height: auto; /* Сохраняем пропорции изображения */
 }
+
+/* Для устройств с шириной экрана до 1200px */
+@media screen and (max-width: 1200px) {
+    .image {
+        width: 10%; /* Увеличиваем изображение на большом экране */
+    }
+}
+
+/* Для устройств с шириной экрана до 992px (планшеты) */
+@media screen and (max-width: 992px) {
+    .image {
+        width: 20%; /* Делаем изображение больше для планшетов */
+    }
+}
+
+/* Для устройств с шириной экрана до 768px (портретная ориентация планшетов и смартфонов) */
+@media screen and (max-width: 768px) {
+    .image {
+        width: 30%; /* Увеличиваем изображение для средних устройств */
+    }
+}
+
+/* Для устройств с шириной экрана до 576px (смартфоны) */
+@media screen and (max-width: 576px) {
+    .image {
+        width: 40%; /* Делаем изображение крупнее на маленьких экранах */
+    }
+}
+
+
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800
+
+.oxanium-<uniquifier> {
+  font-family: "Oxanium", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* Подключаем новые шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #fff; /* Белый для контраста */
+}
+
+img {
+    border-radius: 15px; /* Закругляем углы всех изображений */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляем тень для объема */
+}
+
+.container {
+    border-radius: 15px; /* Закругляем углы панели */
+}
+
+.text, .text1, .card {
+    border-radius: 20px; /* Закругляем углы контентных блоков */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+}
+
+
+a {
+    font-size: 1.2rem; /* Увеличиваем размер текста ссылок */
+    color: #ff69b4; /* Цвет ссылок */
+}
+
+.action_btn {
+    background: linear-gradient(90deg, #ff69b4, #ff1493);
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
 
 .education {
     border-radius: 5%;
@@ -60,7 +160,7 @@ a:hover {
 header {
     position: relative;
     padding: 0 2rem;
-    border-radius: 10%;
+    border-radius: 15px;
 }
 
 .navbar{
@@ -71,7 +171,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 3%;
+    border-radius: 15px;
 }
 
 .navbar .logo a {
@@ -137,15 +237,18 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #1b0824;
-    background-image: url("photo\ 1.png");
-    background-size: cover; /* Растягивает изображение на всю доступную площадь */
   background-position: center; /* Выравнивание изображения по центру */
   height: 100vh; /*Высота элемента на 100% высоты видимой области */
+  background;
   padding: 0;
     color: #333;
     margin: 0;
   padding: 60px;
-
+  background: rgb(13,20,213);
+background: radial-gradient(circle, rgba(13,20,213,1) 0%, rgb(20, 13, 104) 35%, rgba(3,9,32,1) 100%);
+  padding-left: 3%;
+  padding-right: 3%;
+  overflow-x: hidden;
 }
 
 
@@ -154,7 +257,7 @@ body {
     margin: 0 auto;
     padding: 0px;
     box-sizing: border-box;
-    border-radius: 35%;
+    border-radius: 15px;
     }
     
     .container img {
@@ -169,7 +272,7 @@ body {
         height: auto;
         display: block;
         margin: 0 auto;
-        border-radius: 5%;
+        border-radius: 15px;
         }
     
     .container .text {
@@ -257,7 +360,7 @@ body {
 }
 
 .text, .text1 {
-    border-radius: 5%;
+    border-radius: 15px;
     flex: 1;
     padding: 20px;
 }
@@ -265,7 +368,7 @@ body {
 /* Медиазапрос для экранов шире 1200px */
 @media only screen and (min-width: 1200px) {
     .container img {
-        width: 48%; /* Изображения занимают 48% ширины родительского контейнера */
+        width: 30%; /* Изображения занимают 48% ширины родительского контейнера */
     }
 }
 
@@ -512,12 +615,10 @@ body {
 
 
 
-
-
 header {
     display: flex;
     align-items: center; /* Выравниваем элементы по вертикали */
-    border-radius: 30%;
+    border-radius: 10px;
 }
 
 .logo img {
@@ -585,11 +686,10 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     font-size: xx-large;
-    background-color: rgba(173, 31, 255, 0.5);
+    background-color: rgba(46, 31, 255, 0.2);
     color: #ccc;
-    border-radius: 35%;
+    border-radius: 10px;
 }
-
 
 
 .main {
@@ -599,30 +699,19 @@ h2 {
 }
 
 
-
 .contacts {
 color: rgb(255, 255, 255);
 text-align: center;
-background-color: rgba(98, 23, 141, 0.3); /* Прозрачный фон */
+background-color: rgba(46, 31, 255, 0.3);
 padding-bottom: 2%;
 font-family: 'Times New Roman', Times, serif;
 font-size:larger;
 }
 
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding-left: 3%;
-    padding-right: 3%;
-    overflow-x: hidden;
-    
-}
-
-
 
 header { 
-    background-color: rgba(173, 31, 255, 0.3); /* Прозрачный фон */
+    background-color: rgba(46, 31, 255, 0.3);/* Прозрачный фон */
     color: #ffffff; /* Непрозрачный белый текст */
     padding: 10px;
     text-align: center;
@@ -649,7 +738,6 @@ footer {
     padding: 10px;
     text-align: center;
     color: #ffffff; /* Непрозрачный белый текст */
-    border-radius: 30%;
 }
 
 footer::before {
@@ -659,8 +747,9 @@ footer::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(168, 19, 254, 0.7); /* Полупрозрачный фон */
+    background-color: rgba(46, 31, 255, 0.3);
     z-index: -1; /* Чтобы фон был позади текста */
+    border-radius:10px;
 }
 
 
@@ -693,7 +782,7 @@ footer::before {
     flex: 0 0 calc(33.33% - 20px);
     width: 300px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    background-color: rgba(98, 23, 141, 0.5); /* Прозрачный фон */;
+    background-color: rgba(46, 31, 255, 0.3); /* Прозрачный фон */;
     margin: 0.5pc;
   }
 
@@ -722,7 +811,7 @@ footer::before {
 
 .contacts {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  border-radius: 5%;
+  border-radius: 15px;
 }
 
 
@@ -733,11 +822,8 @@ footer::before {
 
 
 
-
-
-
 #contacts {
-    background-color: rgba(98, 23, 141, 0.5); /* Прозрачный фон */;
+    background-color: rgba(46, 31, 255, 0.2); /* Прозрачный фон */;
     color: #ffffff; /* White text */
     padding: 20px;
     text-align: center;
@@ -767,4 +853,3 @@ footer::before {
 .social-media a:hover {
     color: #ff69b4; /* Lighter pink color on hover */
 }
-
