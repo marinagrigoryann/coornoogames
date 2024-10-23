@@ -186,10 +186,6 @@ header {
 
 
 
-.normaltext{
-    font-size: larger;
-    color: #ccc;
-}
 
 .html {
     overflow-x: hidden;
@@ -626,6 +622,8 @@ header {
 
 .normaltext {
     font-family: 'Tahoma', sans-serif;
+    font-size: larger;
+    color: #ccc;
 }
 
 img {
