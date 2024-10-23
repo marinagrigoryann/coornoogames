@@ -52,43 +52,6 @@
 
 
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 200 to 800
-
-.oxanium-<uniquifier> {
-  font-family: "Oxanium", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-/* Подключаем новые шрифты */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
-
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    color: #fff; /* Белый для контраста */
-}
-
-img {
-    border-radius: 15px; /* Закругляем углы всех изображений */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляем тень для объема */
-}
-
-.container {
-    border-radius: 15px; /* Закругляем углы панели */
-}
-
-.text, .text1, .card {
-    border-radius: 20px; /* Закругляем углы контентных блоков */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Добавляем тень */
-}
-
 
 a {
     font-size: 1.2rem; /* Увеличиваем размер текста ссылок */
@@ -229,12 +192,12 @@ header {
 }
 
 .html {
-    overflow-x: scroll; /* Добавлено горизонтальное прокручивание */
+    overflow-x: hidden;
 }
 
 
 body {
-    font-family: 'Oxanium', sans-serif;
+    font-family: 'Oswald', sans-serif;
     line-height: 1.6;
     background-color: #1b0824;
   background-position: center; /* Выравнивание изображения по центру */
@@ -244,10 +207,10 @@ body {
     color: #333;
     margin: 0;
   padding: 60px;
-  background: rgb(13,20,213);
-background: radial-gradient(circle, rgb(9, 15, 166) 0%, rgb(17, 10, 84) 35%, rgb(0, 0, 0) 100%);
-  padding-left: 3%;
-  padding-right: 3%;
+  background: rgb(14,16,32);
+background: radial-gradient(circle, rgba(14,16,32,1) 26%, rgba(18,23,62,1) 46%, rgba(3,3,4,1) 75%, rgba(37,37,37,1) 100%);
+  padding-left: 4%;
+  padding-right: 4%;
   overflow-x: hidden;
 }
 
@@ -643,7 +606,7 @@ header {
 
 
 .text {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Oswald', sans-serif;
     font-size: medium;
     margin-left: 20px; /* Отступ слева для размещения текста рядом с изображением */
     margin-right: 20px; /* Отступ слева для размещения текста рядом с изображением */
@@ -653,7 +616,7 @@ header {
 }
 
 .text1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Oswald', sans-serif;
     font-size: medium;
     margin-left: 20px; /* Отступ слева для размещения текста рядом с изображением */
     margin-right: 20px; /* Отступ слева для размещения текста рядом с изображением */
@@ -661,29 +624,34 @@ header {
     color: #ccc;
 }
 
+.normaltext {
+    font-family: 'Tahoma', sans-serif;
+}
+
 img {
     max-width: 100%; /* Чтобы изображение не выходило за пределы родительского контейнера */
     height: auto; /* Автоматическое подстраивание высоты */
     margin-bottom: 2%;
     margin-left: 2%;
+    border-radius: 10px;
 }
 
 h1{
    
     text-align: center; /* Выравниваем заголовок по центру */
-    font-family: 'Oxanium', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: #ccc;
 }
 
 h2 {
     text-align: center; /* Выравниваем заголовок по центру */
-    font-family: 'Oxanium', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: #ccc;
 }
 
 .Welcome{
     text-align: center; /* Выравниваем заголовок по центру */
-    font-family: 'Arima', sans-serif;
+    font-family: 'Oswald', sans-serif;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     font-size: xx-large;
     background-color: rgba(46, 31, 255, 0.2);
@@ -704,7 +672,7 @@ color: rgb(255, 255, 255);
 text-align: center;
 background-color: rgba(46, 31, 255, 0.3);
 padding-bottom: 2%;
-font-family: 'Times New Roman', Times, serif;
+font-family: 'Tahoma', sans-serif;
 font-size:larger;
 }
 
@@ -738,6 +706,7 @@ footer {
     padding: 10px;
     text-align: center;
     color: #ffffff; /* Непрозрачный белый текст */
+    font-family: 'Tahoma', sans-serif;
 }
 
 footer::before {
@@ -750,6 +719,7 @@ footer::before {
     background-color: rgba(46, 31, 255, 0.3);
     z-index: -1; /* Чтобы фон был позади текста */
     border-radius:10px;
+    font-family: 'Tahoma', sans-serif;
 }
 
 
