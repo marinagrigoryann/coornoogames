@@ -234,7 +234,7 @@ header {
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Oxanium', sans-serif;
     line-height: 1.6;
     background-color: #1b0824;
   background-position: center; /* Выравнивание изображения по центру */
@@ -245,7 +245,7 @@ body {
     margin: 0;
   padding: 60px;
   background: rgb(13,20,213);
-background: radial-gradient(circle, rgba(13,20,213,1) 0%, rgb(20, 13, 104) 35%, rgba(3,9,32,1) 100%);
+background: radial-gradient(circle, rgb(9, 15, 166) 0%, rgb(17, 10, 84) 35%, rgb(0, 0, 0) 100%);
   padding-left: 3%;
   padding-right: 3%;
   overflow-x: hidden;
@@ -671,19 +671,19 @@ img {
 h1{
    
     text-align: center; /* Выравниваем заголовок по центру */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Oxanium', sans-serif;
     color: #ccc;
 }
 
 h2 {
     text-align: center; /* Выравниваем заголовок по центру */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Oxanium', sans-serif;
     color: #ccc;
 }
 
 .Welcome{
     text-align: center; /* Выравниваем заголовок по центру */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arima', sans-serif;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     font-size: xx-large;
     background-color: rgba(46, 31, 255, 0.2);
