@@ -191,6 +191,9 @@ header {
     overflow-x: hidden;
 }
 
+html {
+    overflow-x: hidden;
+}
 
 body {
     font-family: 'Oswald', sans-serif;
