@@ -67,7 +67,7 @@ a {
 
 
 .education {
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 .logo {
@@ -103,7 +103,7 @@ a {
  margin: 0;
  padding: 0;
  box-sizing: border-box;
- font-family: 'Open Sans', sans-serif;
+ font-family: 'Oswald', sans-serif;
 }
 
 li {
@@ -184,12 +184,6 @@ header {
 }
 
 
-
-
-
-.html {
-    overflow-x: hidden;
-}
 
 html {
     overflow-x: hidden;
@@ -318,7 +312,7 @@ background: radial-gradient(circle, rgba(14,16,32,1) 26%, rgba(18,23,62,1) 46%, 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 .text, .text1 {
@@ -595,7 +589,7 @@ header {
     display: flex; /* Используем flexbox для размещения элементов в строку */
     align-items: center; /* Выравниваем элементы по вертикали по центру */
     box-shadow: 0 8px 16px 0 rgba(90, 89, 89, 0.2);
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 
@@ -763,7 +757,7 @@ footer::before {
     flex-flow: row wrap;
     opacity: 0.9;
     justify-content: center;
-    border-radius: 35%;
+    border-radius: 10px;
   }
 
   .texts {
@@ -777,7 +771,7 @@ footer::before {
     max-width: 100%;
     height: auto;
     
-    border-radius: 3%;
+    border-radius: 10px;
     padding: 0em;
     flex: 0 0 calc(33.33% - 20px);
     width: 300px;
