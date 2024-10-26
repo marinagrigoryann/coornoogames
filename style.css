@@ -11,7 +11,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     opacity: 0,7;
   }
 
@@ -120,11 +119,7 @@ a:hover {
     color: orange;
 }
 
-header {
-    position: relative;
-    padding: 0 2rem;
-    border-radius: 15px;
-}
+
 
 .navbar{
     width: 100%;
@@ -192,7 +187,6 @@ html {
 body {
     font-family: 'Oswald', sans-serif;
     line-height: 1.6;
-    background-color: #1b0824;
   background-position: center; /* Выравнивание изображения по центру */
   height: 100vh; /*Высота элемента на 100% высоты видимой области */
   background;
@@ -201,7 +195,7 @@ body {
     margin: 0;
   padding: 60px;
   background: rgb(14,16,32);
-background: radial-gradient(circle, rgba(14,16,32,1) 26%, rgba(18,23,62,1) 46%, rgba(3,3,4,1) 75%, rgba(37,37,37,1) 100%);
+  background: radial-gradient(circle, rgba(14,16,32,1) 26%, rgba(14,16,32,1) 46%, rgba(3,3,4,1) 75%, rgba(37,37,37,1) 100%);
   padding-left: 4%;
   padding-right: 4%;
   overflow-x: hidden;
@@ -213,7 +207,6 @@ background: radial-gradient(circle, rgba(14,16,32,1) 26%, rgba(18,23,62,1) 46%, 
     margin: 0 auto;
     padding: 0px;
     box-sizing: border-box;
-    border-radius: 15px;
     }
     
     .container img {
@@ -570,13 +563,6 @@ background: radial-gradient(circle, rgba(14,16,32,1) 26%, rgba(18,23,62,1) 46%, 
 
 
 
-
-header {
-    display: flex;
-    align-items: center; /* Выравниваем элементы по вертикали */
-    border-radius: 10px;
-}
-
 .logo img {
     width: 100px; /* Устанавливаем ширину логотипа */
     height: auto; /* Автоматически подстраиваем высоту */
@@ -588,8 +574,7 @@ header {
 .container {
     display: flex; /* Используем flexbox для размещения элементов в строку */
     align-items: center; /* Выравниваем элементы по вертикали по центру */
-    box-shadow: 0 8px 16px 0 rgba(90, 89, 89, 0.2);
-    border-radius: 10px;
+    
 }
 
 
@@ -603,7 +588,6 @@ header {
     font-size: medium;
     margin-left: 20px; /* Отступ слева для размещения текста рядом с изображением */
     margin-right: 20px; /* Отступ слева для размещения текста рядом с изображением */
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
     max-width: 90%;
     color: #ccc;
     word-spacing: normal;
@@ -618,7 +602,6 @@ header {
     font-size: medium;
     margin-left: 20px; /* Отступ слева для размещения текста рядом с изображением */
     margin-right: 20px; /* Отступ слева для размещения текста рядом с изображением */
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
     color: #ccc;
     word-spacing: normal;
     white-space: normal;
@@ -668,20 +651,29 @@ h2 {
     color: #ccc;
 }
 
-.Welcome{
+.Welcome {
+    position: relative; /* Сохраняем контекст позиционирования */
+    width: 100vw; /* Полная ширина экрана */
+    margin-left: calc(-4vw); /* Сдвигаем влево на величину отступа */
+    padding: 3px; /* Внутренний отступ для содержания */
+    
     word-spacing: normal;
     white-space: normal;
     letter-spacing: normal;
     text-align: justify;
-    word-spacing: -0.5px;
-    text-align: center; /* Выравниваем заголовок по центру */
+    text-align: center;
     font-family: 'Oswald', sans-serif;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    color: #222222;
     font-size: xx-large;
-    background-color: rgba(46, 31, 255, 0.2);
-    color: #ccc;
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 1;
+    filter: brightness(0.9);
+    box-shadow: #fff;
 }
+
 
 
 .main {
@@ -694,19 +686,25 @@ h2 {
 .contacts {
 color: rgb(255, 255, 255);
 text-align: center;
-background-color: rgba(46, 31, 255, 0.3);
+background-color: rgba(25, 25, 25, 0.3); /* Полупрозрачный фон */
 padding-bottom: 2%;
 font-family: 'Tahoma', sans-serif;
 font-size:larger;
+
 }
 
 
 
 header { 
-    background-color: rgba(46, 31, 255, 0.3);/* Прозрачный фон */
+    position: relative; /* Сохраняем контекст позиционирования */
+    width: 100vw; /* Полная ширина экрана */
+    margin-left: calc(-4vw); /* Сдвигаем влево на величину отступа */
+    background-color:rgba(255, 255, 255, 0.3); /* Полупрозрачный фон */
     color: #ffffff; /* Непрозрачный белый текст */
     padding: 10px;
     text-align: center;
+    display: flex;
+    align-items: center; /* Выравниваем элементы по вертикали */
 }
 
 
@@ -731,6 +729,9 @@ footer {
     text-align: center;
     color: #ffffff; /* Непрозрачный белый текст */
     font-family: 'Tahoma', sans-serif;
+    position: relative; /* Сохраняем контекст позиционирования */
+    width: 100vw; /* Полная ширина экрана */
+    margin-left: calc(-4vw); /* Сдвигаем влево на величину отступа */
 }
 
 footer::before {
@@ -740,10 +741,12 @@ footer::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(46, 31, 255, 0.3);
+    background-color: rgba(25, 25, 25, 0.3); /* Полупрозрачный фон */
     z-index: -1; /* Чтобы фон был позади текста */
-    border-radius:10px;
     font-family: 'Tahoma', sans-serif;
+    position: relative; /* Сохраняем контекст позиционирования */
+    width: 100vw; /* Полная ширина экрана */
+    margin-left: calc(-4vw); /* Сдвигаем влево на величину отступа */
 }
 
 
@@ -770,13 +773,10 @@ footer::before {
     transition: 0.3s;
     max-width: 100%;
     height: auto;
-    
     border-radius: 10px;
     padding: 0em;
     flex: 0 0 calc(33.33% - 20px);
     width: 300px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    background-color: rgba(46, 31, 255, 0.3); /* Прозрачный фон */;
     margin: 0.5pc;
   }
 
@@ -804,7 +804,6 @@ footer::before {
 }
 
 .contacts {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   border-radius: 15px;
 }
 
@@ -817,20 +816,25 @@ footer::before {
 
 
 #contacts {
-    background-color: rgba(46, 31, 255, 0.2); /* Прозрачный фон */;
     color: #ffffff; /* White text */
     padding: 20px;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+    position: relative; /* Сохраняем контекст позиционирования */
+    width: 100vw; /* Полная ширина экрана */
+    padding: 3px; /* Внутренний отступ для содержания */
 }
 
 #contacts h2, #contacts h3 {
     color: #ffffff; /* Keep the headings white */
     margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
 }
 
 #contacts p {
     font-size: 16px;
     margin-bottom: 20px;
+    font-family: 'Tahoma', sans-serif;
 }
 
 #contacts a {
